@@ -1,0 +1,45 @@
+{% extends 'ErlemJobeetBundle::layout.html.twig' %}
+ 
+{% block title %}
+    {% trans with {'%company%': entity.company, '%position%': entity.position} %}%company% is looking for a %position%{% endtrans %}
+{% endblock %}
+ 
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href={{ asset('bundles/erlemjobeet/css/job.css') }} type="text/css" media="all" />
+{% endblock %}
+ 
+{% block content %}
+    {% if app.request.get('token') %}
+        {% include 'ErlemJobeetBundle:Job:admin.html.twig' with {'job': entity} %}
+    {% endif %}
+    <div id="job">
+        <h1>{{ entity.company }}</h1>
+        <h2>{{ entity.location }}</h2>
+        <h3>
+            {{ entity.position }}
+            <small> - {{ entity.type }}</small>
+        </h3>
+ 
+        {% if entity.logo %}
+            <div class="logo">
+                <a href={{ entity.url }}>
+                    <img src="/uploads/jobs/{{ entity.logo }}
+                        alt={{ entity.company }} logo" />
+                </a>
+            </div>
+        {% endif %}
+ 
+        <div class="description">
+            {{ entity.description|nl2br }}
+        </div>
+ 
+        <h4>{% trans %}How to apply?{% endtrans %}</h4>
+ 
+        <p class="how_to_apply">{{ entity.howtoapply }}</p>
+ 
+        <div class="meta">
+            <small>{% trans with {'%date%': entity.createdat|date('m/d/Y')} %}posted on %date%{% endtrans %}</small>
+        </div>
+    </div>
+{% endblock %}

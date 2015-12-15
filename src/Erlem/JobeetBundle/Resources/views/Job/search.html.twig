@@ -1,0 +1,12 @@
+{% extends 'ErlemJobeetBundle::layout.html.twig' %}
+ 
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href={{ asset('bundles/erlemjobeet/css/jobs.css') }} type="text/css" media="all" />
+{% endblock %}
+ 
+{% block content %}
+    <div id="jobs">
+        {% include 'ErlemJobeetBundle:Job:list.html.twig' with {'jobs': jobs} %}
+    </div>
+{% endblock %}

@@ -1,0 +1,47 @@
+login:
+    pattern: /login
+    defaults: { _controller: ErlemJobeetBundle:Default:login }
+ 
+login_check:
+    pattern: /login_check
+ 
+logout:
+  pattern: /logout
+ 
+ErlemJobeetBundle_category:
+    pattern:  /{_locale}/category/{slug}/{page}
+    defaults: { _controller: ErlemJobeetBundle:Category:show, page: 1 }   
+    requirements:
+        _locale: en|fr
+ 
+ErlemJobeetBundle_job:
+    resource: "@ErlemJobeetBundle/Resources/config/routing/job.yml"
+    prefix:   /{_locale}/job
+    requirements: 
+        _locale: en|fr
+ 
+erlem_jobeet_homepage:
+    pattern:  /{_locale}/
+    defaults: { _controller: ErlemJobeetBundle:Job:index }
+    requirements: 
+        _locale: en|fr
+ 
+ErlemJobeetBundle_api:
+    pattern: /api/{token}/jobs.{_format}
+    defaults: {_controller: "ErlemJobeetBundle:Api:list"}
+    requirements:
+        _format: xml|json|yaml
+ 
+ErlemJobeetBundle_erlem_affiliate:
+    resource: "@ErlemJobeetBundle/Resources/config/routing/affiliate.yml"
+    prefix:   /{_locale}/affiliate       
+    requirements: 
+        _locale: en|fr
+
+ErlemJobeetBundle_nonlocalized:
+    pattern:  /
+    defaults: { _controller: "ErlemJobeetBundle:Job:index" }
+
+ErlemJobeetBundle_changeLanguage:
+    pattern: /change_language
+    defaults: { _controller: "ErlemJobeetBundle:Default:changeLanguage" }

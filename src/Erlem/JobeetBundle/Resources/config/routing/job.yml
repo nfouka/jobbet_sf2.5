@@ -1,0 +1,52 @@
+erlem_job:
+    path:     /
+    defaults: { _controller: "ErlemJobeetBundle:Job:index" }
+
+erlem_job_show:
+    pattern:  /{company}/{location}/{id}/{position}
+    defaults: { _controller: "ErlemJobeetBundle:Job:show" }
+    requirements:
+        id:  \d+
+
+erlem_job_preview:
+    pattern:  /{company}/{location}/{token}/{position}
+    defaults: { _controller: "ErlemJobeetBundle:Job:preview" }
+    requirements:
+        token:  \w+
+
+erlem_job_new:
+    path:     /new
+    defaults: { _controller: "ErlemJobeetBundle:Job:new" }
+
+erlem_job_create:
+    path:     /create
+    defaults: { _controller: "ErlemJobeetBundle:Job:create" }
+    requirements: { _method: post }
+
+erlem_job_edit:
+    pattern:  /{token}/edit
+    defaults: { _controller: "ErlemJobeetBundle:Job:edit" }
+
+erlem_job_update:
+    pattern:  /{token}/update
+    defaults: { _controller: "ErlemJobeetBundle:Job:update" }
+    requirements: { _method: post|put }
+
+erlem_job_delete:
+    pattern:  /{token}/delete
+    defaults: { _controller: "ErlemJobeetBundle:Job:delete" }
+    requirements: { _method: post|delete }
+
+erlem_job_publish:
+    pattern:  /{token}/publish
+    defaults: { _controller: "ErlemJobeetBundle:Job:publish" }
+    requirements: { _method: post }
+
+erlem_job_extend:
+    pattern:  /{token}/extend
+    defaults: { _controller: "ErlemJobeetBundle:Job:extend" }
+    requirements: { _method: post }
+
+erlem_job_search:
+    pattern: /search
+    defaults: { _controller: "ErlemJobeetBundle:Job:search" }

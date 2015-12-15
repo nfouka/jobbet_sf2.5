@@ -1,0 +1,30 @@
+parameters:
+#    erlem_jobeet.example.class: Erlem\JobeetBundle\Example
+
+services:
+    erlem.jobeet.admin.category:
+        class: Erlem\JobeetBundle\Admin\CategoryAdmin
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: jobeet, label: Categories }
+        arguments:
+            - ~
+            - Erlem\JobeetBundle\Entity\Category
+            - 'ErlemJobeetBundle:CategoryAdmin'
+ 
+    erlem.jobeet.admin.job:
+        class: Erlem\JobeetBundle\Admin\JobAdmin
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: jobeet, label: Jobs }
+        arguments:
+            - ~
+            - Erlem\JobeetBundle\Entity\Job
+            - 'ErlemJobeetBundle:JobAdmin'
+
+    erlem.jobeet.admin.affiliate:
+        class: Erlem\JobeetBundle\Admin\AffiliateAdmin
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: jobeet, label: Affiliates }
+        arguments:
+            - ~
+            - Erlem\JobeetBundle\Entity\Affiliate
+            - 'ErlemJobeetBundle:AffiliateAdmin'

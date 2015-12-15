@@ -1,0 +1,134 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" datatype="plaintext" original="file.ext">
+        <body>
+            <trans-unit id="1">
+                <source>Jobeet - Your best job board</source>
+                <target>Jobeet - Les meilleurs offres d'emplois</target>
+            </trans-unit>
+            <trans-unit id="2">
+                <source>Enter some keywords (city, country, position, ...)</source>
+                <target>Entre des mots cle (ville, pays, position, ...)</target>
+            </trans-unit>
+            <trans-unit id="3">
+                <source>Recent viewed jobs:</source>
+                <target>Dernier emplois vus:</target>
+            </trans-unit>
+            <trans-unit id="4">
+                <source>About Jobeet</source>
+                <target>A propos de Jobeet</target>
+            </trans-unit>
+            <trans-unit id="5">
+                <source>Become an affiliate</source>
+                <target>Devenir un affilie</target>
+            </trans-unit>
+            <trans-unit id="6">
+                <source>and %count% more...</source>
+                <target>et %count%
+                        autres...</target>
+            </trans-unit>
+            <trans-unit id="7">
+                <source>Language</source>
+                <target>Langue</target>
+            </trans-unit>
+            <trans-unit id="8">
+                <source>Publish</source>
+                <target>Publier</target>
+            </trans-unit>
+            <trans-unit id="9">
+                <source>Edit</source>
+                <target>Editer</target>
+            </trans-unit>
+            <trans-unit id="10">
+                <source>Are you sure?</source>
+                <target>Etes-vous sur?</target>
+            </trans-unit>
+            <trans-unit id="11">
+                <source>Delete</source>
+                <target>Supprimer</target>
+            </trans-unit>
+            <trans-unit id="12">
+                <source>Extend</source>
+                <target>Prolonger</target>
+            </trans-unit>
+            <trans-unit id="13">
+                <source>for another 30 days</source>
+                <target>pour 30 jours supplementaires</target>
+            </trans-unit>
+            <trans-unit id="14">
+                <source>Bookmark this %url% to manage this job in the future</source>
+                <target>Marquer cette %url% pour gerer ce travail a l'avenir</target>
+            </trans-unit>
+            <trans-unit id="15">
+                <source>Whether the job can also be published on affiliate websites or not.</source>
+                <target>Si le travail peut egalement etre publie sur les sites affilies ou non.</target>
+            </trans-unit>
+            <trans-unit id="16">
+                <source>%company% is looking for a %position%</source>
+                <target>%company% est a la recherche d'un %position%</target>
+            </trans-unit>
+            <trans-unit id="17">
+                <source>How to apply?</source>
+                <target>comment appliquer?</target>
+            </trans-unit>
+            <trans-unit id="18">
+                <source>posted on %date%</source>
+                <target>poste en %date%</target>
+            </trans-unit>
+            <trans-unit id="19">
+                <source>{0} No job in this category|{1} One job in this category|]1,Inf] %count% jobs in this category</source>
+                <target>{0}Aucune annonce dans cette categorie|{1}Une annonce dans cette categorie|]1,+Inf] %count% annonces dans cette categorie</target>
+            </trans-unit>
+            <trans-unit id="20">
+                <source>Jobs in the %category% category</source>
+                <target>Travails dans le %category% categorie</target>
+            </trans-unit>
+            <trans-unit id="21">
+                <source>Your affiliate account has been created</source>
+                <target>Votre compte d'affiliation a ete cree</target>
+            </trans-unit>
+            <trans-unit id="22">
+                <source>Thank you!
+            You will receive an email with your affiliate token
+            as soon as your account will be activated.</source>
+                <target>On te remercie! Vous recevrez un email avec votre jeton d'affiliation des que votre compte sera active.</target>
+            </trans-unit>
+            <trans-unit id="23">
+                <source>Expires in %count% days</source>
+                <target>Expire en %count% jours</target>
+            </trans-unit>
+            <trans-unit id="24">
+                <source>Ask for people</source>
+                <target>Recherche des gens</target>
+            </trans-unit>
+            <trans-unit id="25">
+                <source>Ask for a job</source>
+                <target>Recherche d'un emploi</target>
+            </trans-unit>
+            <trans-unit id="26">
+                <source>Jobeet API</source>
+                <target>API Jobeet</target>
+            </trans-unit>
+            <trans-unit id="27">
+                <source>Job creation</source>
+                <target>Creation d'emploi</target>
+            </trans-unit>
+            <trans-unit id="28">
+                <source>Job edit</source>
+                <target>Edit l'emploi</target>
+            </trans-unit>
+            <trans-unit id="29">
+                <source>Expired</source>
+                <target>Expiré</target>
+            </trans-unit>
+            <trans-unit id="30">
+                <source>Full feed</source>
+                <target>Fil RSS</target>
+            </trans-unit>
+            <trans-unit id="31">
+                <source>Post a Job</source>
+                <target>Poste un emploi </target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

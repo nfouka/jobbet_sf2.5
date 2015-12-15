@@ -1,0 +1,12 @@
+erlem_affiliate_new:
+    pattern:  /new
+    defaults: { _controller: "ErlemJobeetBundle:Affiliate:new" }
+
+erlem_affiliate_create:
+    pattern: /create
+    defaults: { _controller: "ErlemJobeetBundle:Affiliate:create" }
+    requirements: { _method: post }
+
+erlem_affiliate_wait:
+    pattern: /wait
+    defaults: { _controller: "ErlemJobeetBundle:Affiliate:wait" }
