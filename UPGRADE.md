@@ -4,6 +4,8 @@ Symfony Standard Edition Upgrade
 From Symfony 2.0 to Symfony 2.1
 -------------------------------
 
+[<img src="https://img.youtube.com/vi/<VIDEO ID>/maxresdefault.jpg" width="50%">](https://youtu.be/<VIDEO ID>)
+
 ### Project Dependencies
 
 As of Symfony 2.1, project dependencies are managed by
